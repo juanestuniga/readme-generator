@@ -1,9 +1,12 @@
 # readme-generator
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/juanestuniga/undefined?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/juanestuniga/undefined?style=flat&logo=appveyor)
+  
+  Check out the badges hosted by [shields.io](https://shields.io/).
   
   ## Description 
   
   
-  this is a readme generator using command line and Node
+   Every project needs a good README so that anyone can understand what is going on and how to install it. This is a command line application using NODE.js that generats a README file based on the information provided.
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -14,12 +17,12 @@
   ## Installation
   
   
-  git clone repo
+  git clone the repo down to your local computer so that you have Node project. Run npm install in order to install the following npm package dependencies as specified in the package.json
   
   ## Usage 
   
   
-  run using node index.js
+   When 'node index.js' is ran the application uses the inquirer package to prompt in command line. 
   
   ## Contributing
   
@@ -29,7 +32,7 @@
   ## Tests
   
   
-  none
+  None
   
   ## License
   

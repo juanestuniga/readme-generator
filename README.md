@@ -1,4 +1,7 @@
 # readme-generator
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/juanestuniga/undefined?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/juanestuniga/undefined?style=flat&logo=appveyor)
+  
+  Check out the badges hosted by [shields.io](https://shields.io/).
   
   ## Description 
   
@@ -18,8 +21,7 @@
   
   ## Usage 
   
-   ![gif](./readme-video.gif)
-    
+  ![gif](./readme-video.gif)
    When 'node index.js' is ran the application uses the inquirer package to prompt in command line. 
   
   ## Contributing
