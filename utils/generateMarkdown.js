@@ -21,7 +21,6 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Description 
   
-  *The what, why, and how:* 
   
   ${userResponses.description}
   `
@@ -42,7 +41,6 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Installation
   
-  *Steps required to install project and how to get the development environment running:*
   
   ${userResponses.installation}`
   };
@@ -57,7 +55,6 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Usage 
   
-  *Instructions and examples for use:*
   
   ${userResponses.usage}`
   };
@@ -72,7 +69,6 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Contributing
   
-  *If you would like to contribute it, you can follow these guidelines for how to do so.*
   
   ${userResponses.contributing}`
   };
@@ -86,7 +82,6 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Tests
   
-  *Tests for application and how to run them:*
   
   ${userResponses.tests}`
   };

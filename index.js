@@ -22,7 +22,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: "install",
+        name: "installation",
         message: "How do you install this project?"
     },
     {
@@ -42,7 +42,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: "testing",
+        name: "tests",
         message: "Enter info about tests for this project:"
     },
 ];
