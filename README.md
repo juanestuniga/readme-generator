@@ -14,7 +14,7 @@
   ## Installation
   
   
-  git clone the repo down to your local computer so that you have Node project
+  git clone the repo down to your local computer so that you have Node project. Run npm install in order to install the following npm package dependencies as specified in the package.json
   
   ## Usage 
   
