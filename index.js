@@ -1,8 +1,8 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-const generateMarkdown = require("utils/generateMarkdown.js");
-const api = require("utils/api.js");
+const generateMarkdown = require("./utils/generateMarkdown");
+const api = require("./utils/api");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -58,16 +58,4 @@ function init() {
             });
         });
 };
-init();// TODO: Include packages needed for this application
-
-// TODO: Create an array of questions for user input
-const questions = [];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
 init();
