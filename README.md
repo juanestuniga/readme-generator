@@ -1,12 +1,12 @@
 # readme-generator
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/juanestuniga/undefined?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/juanestuniga/undefined?style=flat&logo=appveyor)
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/juanestuniga/readme-generator?style=flat&logo=appveyor)
   
   Check out the badges hosted by [shields.io](https://shields.io/).
   
   ## Description 
   
   
-   Every project needs a good README so that anyone can understand what is going on and how to install it. This is a command line application using NODE.js that generats a README file based on the information provided.
+  Every project needs a good README so that anyone can understand what is going on and how to install it. This is a command line application using NODE.js that generats a README file based on the information provided.
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -21,10 +21,9 @@
   
   ## Usage 
   
-  ![gif](./readme-video.gif)
+  ![gif](readme-video.gif)
   
-  
-   When 'node index.js' is ran the application uses the inquirer package to prompt in command line. 
+  When 'node index.js' is ran the application uses the inquirer package to prompt in command line. 
   
   ## Contributing
   
@@ -34,7 +33,7 @@
   ## Tests
   
   
-  None
+  n/a
   
   ## License
   
