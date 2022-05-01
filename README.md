@@ -18,7 +18,8 @@
   
   ## Usage 
   
-  
+   ![gif](./readme-video.gif)
+    
    When 'node index.js' is ran the application uses the inquirer package to prompt in command line. 
   
   ## Contributing

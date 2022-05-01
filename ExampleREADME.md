@@ -3,7 +3,7 @@
   ## Description 
   
   
-   Every project needs a good README so that anyone can understand what is going on and how to install it. This is a command line application using NODE.js that generats a README file based on the information provided.
+  this is a readme generator using command line and Node
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -14,12 +14,12 @@
   ## Installation
   
   
-  git clone the repo down to your local computer so that you have Node project
+  git clone repo
   
   ## Usage 
   
   
-   When 'node index.js' is ran the application uses the inquirer package to prompt in command line. 
+  run using node index.js
   
   ## Contributing
   
@@ -29,7 +29,7 @@
   ## Tests
   
   
-  None
+  none
   
   ## License
   
