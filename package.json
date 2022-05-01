@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
     "inquirer": "^6.5.2"
   },
   "repository": {
@@ -19,6 +20,5 @@
     "url": "https://github.com/juanestuniga/readme-generator/issues"
   },
   "homepage": "https://github.com/juanestuniga/readme-generator#readme",
-  "keywords": [],
-  "devDependencies": {}
+  "keywords": []
 }
