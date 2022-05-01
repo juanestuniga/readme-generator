@@ -59,26 +59,20 @@ function writeToFile(fileName, data) {
 
 const writeFileAsync = util.promisify(writeToFile);
 
-
-// Main function
 async function init() {
     try {
 
-        // Prompt Inquirer questions
         const userResponses = await inquirer.prompt(questions);
         console.log("Your responses: ", userResponses);
         console.log("Thank you for your responses! Fetching your GitHub data next...");
     
-        // Call GitHub api for user info
         const userInfo = await api.getUser(userResponses);
         console.log("Your GitHub user info: ", userInfo);
     
-        // Pass Inquirer userResponses and GitHub userInfo to generateMarkdown
         console.log("Generating your README next...")
         const markdown = generateMarkdown(userResponses, userInfo);
         console.log(markdown);
     
-        // Write markdown to file
         await writeFileAsync('ExampleREADME.md', markdown);
 
     } catch (error) {

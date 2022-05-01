@@ -1,19 +1,16 @@
-const axios = require("axios");
-const token = "2bfe155293ccfdbcd36e5aa1e1f984cbcd0d2d38"
+const axios = require('axios');
 
 const api = {
-    getUser(username) {
-        const headers = {headers:
-        {Authorization: `token ${token}`}}
-        const queryUrl = `https://api.github.com/users/${username}`;
+  async getUser(userResponses) {
+    try { let response = await axios
         
-        return axios.get(queryUrl, headers).then(function(res) {
-            return {
-                avatar: res.data.avatar_url,
-                email : res.data.email,
-            }
-        })
-    }
-  };
-  
-  module.exports = api;
+        .get(`https://api.github.com/users/${userResponses.username}`);
+        return response.data;
+
+      } catch (error) {
+        console.log(error);
+      }
+  }
+};
+
+module.exports = api;
