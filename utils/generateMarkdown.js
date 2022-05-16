@@ -1,22 +1,22 @@
 function generateMarkdown(userResponses, userInfo) {
 
-  let draftToC = `## Table of Contents`;
+  let readDraft = `## Table of Contents`;
 
-  if (userResponses.installation !== '') { draftToC += `
+  if (userResponses.installation !== '') { readDraft += `
   * [Installation](#installation)` };
 
-  if (userResponses.usage !== '') { draftToC += `
+  if (userResponses.usage !== '') { readDraft += `
   * [Usage](#usage)` };
 
-  if (userResponses.contributing !== '') { draftToC += `
+  if (userResponses.contributing !== '') { readDraft += `
   * [Contributing](#contributing)` };
 
-  if (userResponses.tests !== '') { draftToC += `
+  if (userResponses.tests !== '') { readDraft += `
   * [Tests](#tests)` };
 
 
-  // Generate markdown 
-  let draftMarkdown = 
+  // Markdown 
+  let readMe = 
   `# ${userResponses.title}
   ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.title}?style=flat&logo=appveyor)
   
@@ -28,18 +28,16 @@ function generateMarkdown(userResponses, userInfo) {
   ${userResponses.description}
   `
 
-  // Table of Contents to markdown
-  draftMarkdown += draftToC;
+  // Table of Contents
+  readMe += readDraft;
  
-  // Add License section since License is required to Table of Contents
-  draftMarkdown += `
+  readMe += `
   * [License](#license)`;
   
 
-  // Optional Installation section
   if (userResponses.installation !== '') {
   
-  draftMarkdown +=
+  readMe +=
   `
   
   ## Installation
@@ -49,10 +47,9 @@ function generateMarkdown(userResponses, userInfo) {
   };
   
 
-  // Optional Usage section
   if (userResponses.usage !== '') {
   
-  draftMarkdown +=
+  readMe +=
   
   `
   
@@ -63,10 +60,9 @@ function generateMarkdown(userResponses, userInfo) {
   };
   
   
-  // Optional Contributing section
   if (userResponses.contributing !== '') {
 
-  draftMarkdown +=
+  readMe +=
     
   `
   
@@ -77,10 +73,9 @@ function generateMarkdown(userResponses, userInfo) {
   };
   
 
-  // Optional Tests section
   if (userResponses.tests !== '') {
   
-  draftMarkdown +=
+  readMe +=
   `
   
   ## Tests
@@ -90,8 +85,7 @@ function generateMarkdown(userResponses, userInfo) {
   };
 
 
-  // License section is required
-  draftMarkdown +=
+  readMe +=
   `
   
   ## License
@@ -100,7 +94,6 @@ function generateMarkdown(userResponses, userInfo) {
   `;
 
 
-  // Questions / About Developer section
   let draftDev = 
   `
   ---
@@ -113,7 +106,6 @@ function generateMarkdown(userResponses, userInfo) {
   GitHub: [@${userInfo.login}](${userInfo.url})
   `;
 
-  // If GitHub email is not null, add to Developer section
   if (userInfo.email !== null) {
   
   draftDev +=
@@ -121,11 +113,10 @@ function generateMarkdown(userResponses, userInfo) {
   Email: ${userInfo.email}
   `};
 
-  // Add developer section to markdown
-  draftMarkdown += draftDev;
+  readMe += draftDev;
 
   // Return markdown
-  return draftMarkdown;
+  return readMe;
   
 }
 

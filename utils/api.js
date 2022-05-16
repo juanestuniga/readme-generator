@@ -1,8 +1,8 @@
-const axios = require('axios');
+const axiosApi = require('axios');
 
-const api = {
+const apiAxios = {
   async getUser(userResponses) {
-    try { let response = await axios
+    try { let response = await axiosApi
         
         .get(`https://api.github.com/users/${userResponses.username}`);
         return response.data;
@@ -13,4 +13,4 @@ const api = {
   }
 };
 
-module.exports = api;
+module.exports = apiAxios;
